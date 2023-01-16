@@ -1,0 +1,16 @@
+{
+  "name": "tailwind",
+  "scripts":{
+   "start" :"vite"
+  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vite": "^4.0.4"
+  }
+}

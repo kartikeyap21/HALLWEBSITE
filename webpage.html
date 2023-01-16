@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HALL 12 </title>
+  <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+  <style>
+    body {
+      background-color: #00337C;
+
+
+    }
+
+    table {
+      background-color: white;
+      width: 50rem;
+      /* height:100px; */
+      position: relative;
+      left: 130px;
+
+
+    }
+
+
+    #ant,
+    #udg,
+    #hec,
+    #club,
+    #CS,#tech {
+      width: 70vw;
+      height: 400px;
+      margin-bottom: 20px;
+      border-radius: 20px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+
+    }
+
+    h2 {
+      font-size: 50px;
+    }
+    
+    
+    #udg {
+      background: linear-gradient(45deg, rgb(207, 207, 36), rgb(50, 171, 60));
+    }
+
+    #ant {
+      background: linear-gradient(45deg, orange, red);
+    }
+
+    #CS {
+      background: linear-gradient(45deg, orange, rgb(238, 238, 26));
+      margin-bottom:100px;
+      /* z-index:2; */
+      position:relative;
+      top:200px;
+      height:700px;
+
+    }
+    #tech{
+      position:relative;
+      top: 180px;
+    }
+
+    #club {
+      background: linear-gradient(45deg, rgb(214, 66, 214), blue);
+      height:700px;
+      z-index:1;
+      position:relative;
+      bottom:10px;
+
+
+    }
+
+    #box1 {
+      position: absolute;
+      left: 100px;
+      width: 300px;
+
+      border-radius: 10px;
+      bottom: 120px;
+
+    }
+
+    #box2 {
+      position: relative;
+      left: 550px;
+      border-radius: 10px;
+      width: 300px;
+      border:2px solid black;
+
+      top: 200px;
+
+
+
+
+
+    }
+
+    #box3 {
+      position: absolute;
+      width: 300px;
+      border-radius: 10px;
+      right: 100px;
+
+      bottom: 125px;
+
+
+
+
+    }
+
+    #cont {
+      border: 2px solid black;
+      margin-top: 5px;
+
+      width: 90vw;
+      border-radius: 10px;
+
+      
+        height: 70vh;
+        width: 90vw;
+        
+        background-color: #639;
+        background-image: linear-gradient(45deg, #000, #000 0.5%, #ffd700 0.5%, #ffd700 7.6%, #000 7.6%, #000 8.642857143%, #ff8c00 8.642857143%, #ff8c00 15.64285714%, #000 15.64285714%, #000 16.88571429%, #dc143c 16.88571429%, #dc143c 23.84285714%, #000 23.84285714%, #000 25%, transparent 25%), linear-gradient(-45deg, #000, #000 0.5%, #ffd700 0.5%, #ffd700 7.6%, #000 7.6%, #000 8.642857143%, #ff8c00 8.642857143%, #ff8c00 15.64285714%, #000 15.64285714%, #000 16.88571429%, #dc143c 16.88571429%, #dc143c 23.84285714%, #000 23.84285714%, #000 25%, transparent 25%), linear-gradient(45deg, transparent 73.85714286%, #000 73.85714286%, #000 75%, transparent 75%), linear-gradient(-45deg, transparent 73.85714286%, #000 73.85714286%, #000 75%, transparent 75%), linear-gradient(45deg, transparent 66.85714286%, #dc143c 66.85714286%, #dc143c 73.85714286%, transparent 73.85714286%), linear-gradient(-45deg, transparent 66.85714286%, #dc143c 66.85714286%, #dc143c 73.85714286%, transparent 73.85714286%), linear-gradient(45deg, transparent 65.71428571%, #000 65.71428571%, #000 66.85714286%, transparent 66.85714286%), linear-gradient(-45deg, transparent 65.71428571%, #000 65.71428571%, #000 66.85714286%, transparent 66.85714286%), linear-gradient(45deg, transparent 58.71428571%, #ff8c00 58.71428571%, #ff8c00 65.71428571%, transparent 65.71428571%), linear-gradient(-45deg, transparent 58.71428571%, #ff8c00 58.71428571%, #ff8c00 65.71428571%, transparent 65.71428571%), linear-gradient(45deg, transparent 57.57142857%, #000 57.57142857%, #000 58.71428571%, transparent 58.71428571%), linear-gradient(-45deg, transparent 57.57142857%, #000 57.57142857%, #000 58.71428571%, transparent 58.71428571%), linear-gradient(45deg, transparent 50.57142857%, #ffd700 50.57142857%, #ffd700 57.57142857%, transparent 57.57142857%), linear-gradient(-45deg, transparent 50.57142857%, #ffd700 50.57142857%, #ffd700 57.57142857%, transparent 57.57142857%), linear-gradient(45deg, transparent 49.42857143%, #000 49.42857143%, #000 50.57142857%, transparent 50.57142857%), linear-gradient(-45deg, transparent 49.42857143%, #000 49.42857143%, #000 50.57142857%, transparent 50.57142857%), linear-gradient(45deg, transparent 42.42857143%, #228b22 42.42857143%, #228b22 49.42857143%, transparent 49.42857143%), linear-gradient(-45deg, transparent 42.42857143%, #228b22 42.42857143%, #228b22 49.42857143%, transparent 49.42857143%), linear-gradient(45deg, transparent 41.28571429%, #000 41.28571429%, #000 42.42857143%, transparent 42.42857143%), linear-gradient(-45deg, transparent 41.28571429%, #000 41.28571429%, #000 42.42857143%, transparent 42.42857143%), linear-gradient(45deg, transparent 34.28571429%, #4169e1 34.28571429%, #4169e1 41.28571429%, transparent 41.28571429%), linear-gradient(-45deg, transparent 34.28571429%, #4169e1 34.28571429%, #4169e1 41.28571429%, transparent 41.28571429%), linear-gradient(45deg, transparent 33.142857143%, #000 33.142857143%, #000 34.28571429%, transparent 34.28571429%), linear-gradient(-45deg, transparent 33.142857143%, #000 33.142857143%, #000 34.28571429%, transparent 34.28571429%);
+        background-size: 100px 100px;
+        background-position: 0 0;
+
+      
+
+
+    }
+
+    a {
+      margin-top:70px;
+      margin-bottom:20px;
+      border: 2px solid black;
+      border-radius: 10px;
+      height: 100px;
+      background-color: gray;
+      padding-top: 10px;
+
+    }
+
+    h1 {
+      position: absolute;
+      top: 10px;
+      right: 400px;
+      font-size: larger;
+    }
+
+    #fin {
+      background-color: black;
+      border: 2px solid black;
+      
+     
+      
+    }
+
+    #hd {
+      margin: 10px 10px;
+      position: absolute;
+      right: 400px;
+
+    }
+
+    #img {
+      position: absolute;
+      left: 600px;
+      height: 200px;
+      top: 200px;
+      margin:10px ;
+    }
+
+    #hi {
+      background-color: #1c82ad;
+      width:90vw;
+      text-align:center;
+    }
+    #hz{
+      background-image: linear-image(45deg,red,yellow);
+    }
+    .tp{
+      position:relative;
+      margin:10px;
+      bottom:10px;
+      margin:10% 2px;
+      width:200px;
+      height:200px;
+      background: linear-gradient(0deg,black,rgb(92, 79, 79));
+
+     
+    }
+    
+    .glow::after, .glow::before{
+      content:"";
+      position:absolute;
+      left:-2px;
+      top:-2px;
+      background: linear-gradient(45deg,yellow,red,white);  
+      background-size:400%;
+      width: calc(100% + 20px);
+      height: calc(100% + 20px);
+      z-index:-1;
+      animation:animate 20% linear infinite;      
+
+
+    }
+    th,td{
+      text-align: center;
+    }
+    
+    @keyframes animate{
+      0%{
+        background-position: 0 0;
+      }
+      50%{
+        background-position: 300% 0;
+      }
+      100%{
+        background-position:0 0;
+      }
+    }
+    .glow::after{
+      filter: blur(40px);
+
+    }
+    #im{
+      position:relative;
+      left:10px;
+      
+      
+    }
+  </style>
+
+
+</head>
+
+<body class="relative flex justify-center items-center gap-5 pt-20 flex-col w-full ">
+  <p id="hi" class="text-5xl sticky bg-black"> MARATHAS' LEGACY UNABATED</p>
+  <div id="tp box"
+    class="tp glow">
+
+    <img id="im" src="webimg.jpg" class="mx-20 relative right-60 top-40 " alt="">
+
+  </div>
+
+
+
+  <div id="cont" class="flex flex-row w-full relative top-40 mt-20 border-blue-800 py-40 mx-10 h-40 px-20 bg-black">
+    <h1
+      id="hz" class="text-black text-4xl bg-red-500 font-sans font-bold  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "
+      Liberation Mono", "Courier New" , monospace;">
+      <center>STALWARTS OF HALL XII... MARATHAS </center>
+    </h1>
+    <div id="box1" class="flex flex-col py-2 justify-between  border-black items-center">
+      <a href="#ant"
+        class=" h-20 px-10 relative bottom-40 left-20 mx-20 my-20 w-full items-center text-4xl text-center bg-gray-500">
+        ANTARAGINI
+
+
+      </a>
+      <a href="#udg" class=" h-20 px-10 relative left-20 mx-20 w-full text-4xl text-center bg-orange-500"> UDGHOSH
+
+      </a>
+    </div>
+    <div id="img">  <!--  <img src="jqdj.jpg" width="200px" height="200px"> -->
+            <a href="#tech" CLASS="h-20 px-10 relative left-28 bottom-40  mx-20 w-full text-4xl text-center bg-orange-500 my-20 "> TECHKRITI</a>
+  </div>
+
+    <div id="box3" class=" px-10 relative left-20 mx-20 my-40 flex flex-col text-4xl items-center">
+      <a href="#CS" class=" h-20 px-10 relative left-20 mx-20 w-full text-center"> CS
+
+      </a>
+      <a href="#club" class=" h-28 px-10 relative left-20 mx-20 w-full text-4xl text-center"> CLUBS,SOCIETIES & TEAMS
+
+      </a>
+    </div>
+
+
+
+
+
+  </div>
+  <hr>
+  <div id="ant" class="w-96 border rounded-lg  bg-red-600 py-20 my-20">
+    <h2>
+      <center> ANTARAGINI</center>
+    </h2>
+
+    <table class="table-auto border rounded-lg  bg-white-200 my-20 ">
+      <thead>
+        <tr>
+          <th>NAME</th>
+          <th>DESIGNATION</th>
+          <th> TENURE</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Maurya Jadav</td>
+          <td>ORGANISER</td>
+          <td>2022-23</td>
+        </tr>
+        <tr>
+          <td>Amanjit Singh</td>
+          <td>ORGANISER</td>
+          <td>2022-23</td>
+        </tr>
+        <tr>
+          <td>Aditya Kulkarni</td>
+          <td>ORGANISER, ELE</td>
+          <td>2022-23</td>
+        </tr>
+        <tr>
+          <td>Harish Mehta</td>
+          <td>ORGANISER, NATIONALS</td>
+          <td>2022-23</td>
+        </tr>
+        <tr>
+          <td>Jaiki Sagar </td>
+          <td>ORGANISER</td>
+          <td>2022-23</td>
+        </tr>
+        <tr>
+          <td>Jitesh Sethi </td>
+          <td>ORGANISER</td>
+          <td>2022-23</td>
+        </tr>
+        <tr>
+          <td>Saval Gautam</td>
+          <td>ORGANISER</td>
+          <td>2022-23</td>
+        </tr>
+        <tr>
+          <td>Prakhyat Chalotra</td>
+          <td>ORGANISER Mr.&Ms. ANTARAGINI</td>
+          <td>2021-22</td>
+        </tr>
+
+        
+        
+
+      </tbody>
+    </table>
+  </div>
+  <div id="udg" class=" border rounded-md py-20  my-20">
+    <h2>
+      <center> UDGHOSH</center>
+    </h2>
+    <table class="table-auto  border rounded-lg py-20  my-40 ">
+      <thead>
+        <tr>
+          <th>NAME</th>
+          <th>DESIGNATION</th>
+          <th>TENURE</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Melvin Thomas</td>
+          <td>ORGANISER</td>
+          <td>2022-23</td>
+        </tr>
+        <tr>
+          <td>Viman Kumar </td>
+          <td>ORGANISER</td>
+          <td>2022-23</td>
+        </tr>
+       
+        <tr>
+          <td>Chandramani kumar </td>
+          <td>ORGANISER MnP</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Vicky 
+          </td>
+          <td>ORGANISER, MnP</td>
+          <td>2022-23</td>
+        </tr>
+        <tr>
+          <td>Harish Kumar</td>
+          <td>ORGANISER</td>
+          <td>2022-23</td>
+        </tr>
+        <tr>
+          <td>Ayush Patel </td>
+          <td>ORGANISER</td>
+          <td>2022-23</td>
+        </tr>
+        
+      </tbody>
+
+    </table>
+
+  </div>
+
+  <div id="club" class="border rounded-md bg-yellow-400 my-20">
+    <h2>
+      <center>CLUBS, SOCIETIES & TEAMS</center>
+    </h2>
+    <table class="table-auto  border rounded-lg bg-white ">
+      <thead>
+        <tr>
+          <th>NAME</th>
+          <th>DESIGNATION</th>
+          <th> TENURE</th>          
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>PRATYUSH GUPTA</td>
+          <td>MANAGER, CHEMINEERS SOCIETY</td>
+          <td>2022-23</td>
+        </tr>
+        <tr>
+          <td>Aaryen Mehta</td>
+          <td>TEAM HEAD ,ERA-IITK</td>
+          <td>2022-23</td>
+        </tr>
+
+        <tr>
+          <td>Nishi Mehta</td>
+          <td>TEAM HEAD ERA , SnT COUNCIL</td>
+          <td>2022-23</td>
+        </tr>
+        <tr>
+          <td>Gaurav Dadhich </td>
+          <td>MANAGER , PPOC</td>
+          <td>2021</td>
+        </tr>
+        <tr>
+          <td>Bipplav Kumar Tiwari</td>
+          <td>COORDINATOR STAMATICS</td>
+          <td>2022-23</td>
+        </tr>
+        <tr>
+          <td>Anupam Anand            
+          </td>
+          <td> COORDINATOR ,D&A CLUB </td>
+          <td>2022-23</td>
+        </tr>
+        <tr>
+          <td>Ronit Agarwal</td>
+          <td>COORDINATOR , SPEEDCUBING CLUB</td>
+          <td>2022-23</td>
+        </tr>
+        <tr>
+          <td>Yuvraj Mimrot</td>
+          <td> COORDINATOR ANIMESOCY. </td>
+          <td>2022-23</td>
+        </tr>
+        <tr>
+          <td>Yuvraj Mimrot
+          </td>
+          <td>LEADER, SnT DesCon</td>
+          <td>2022-23</td>
+        </tr>
+        <tr>
+          <td>Atharva Dehadraya</td>
+          <td>COORDINATOR ASTRONOMY CLUB</td>
+          <td>2022-23</td>
+        </tr>
+        <tr>
+          <td>Shubham kumar</td>
+          <td>COORDINATOR SoCE</td>
+          <td>2022-23</td>
+        </tr>
+        <tr>
+          <td>Aditya Palmate </td>
+          <td>COORDINATOR </td>
+          <td>2022-23</td>
+        </tr>
+        <tr>
+          <td>Mohammad Saad </td>
+          <td>LEADER SCIENCE COFFEEHOUSE<br>COORDINATOR ASTRONOMY CLUB</td>
+          <td>2022-23</td>
+        </tr>
+        <tr>
+          <td>Nikhil Singh</td>
+          <td>COORDINATOR DANCE CLUB</td>
+          <td>2022-23</td>
+        </tr>
+        <tr>
+          <td>Vinoba Pandey</td>
+          <td>AME VICE-PRESIDENT</td>
+          <td>2022-23</td>
+        </tr>
+        <tr>
+          <td>Prabhat Kumar Meena</td>
+          <td>MANAGER</td>
+          <td>2022-23</td>
+        </tr>
+        <tr>
+          <td></td>
+
+        </tr>
+        
+
+
+
+
+        
+
+      </tbody>
+    </table>
+ <div id="tech" class="border rounded-md bg-yellow-400 my-20">
+  <h2><center>TECHKRITI </center></h2>
+  <table class="table-auto  border rounded-lg py-20 bg-white my-40 relative top-20">
+    <thead>
+      <tr>
+        <th>NAME</th>
+        <th>DESIGNATION</th>
+        <th> TENURE</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Anupam Anand</td>    
+        <td>HEAD, DESIGN</td>    
+        <td>2022-23</td>
+      </tr>
+      <tr>
+
+      </tr>
+      <tr>
+        <td>Ronit Agarwal</td>
+        <td>ORGANISER</td>
+        <td>2021-22</td>
+      </tr>
+      <tr>
+        <td>Devansh Mishra </td>
+        <td>HEAD PUBLIC RELATIONS</td>
+        <td>2022-23</td>
+      </tr>
+      <tr>
+        <td>Piyush Beegala</td>
+        <td>HEAD - TEAM Vision</td>
+        <td>2022-23</td>
+      </tr>
+      <tr>
+        <td>Aditya Palmate </td>
+        <td>COORDINATOR AEROMODELLING CLUB</td>
+        <td>2022-23</td>
+      </tr>
+
+
+    </tbody>
+
+ </div>
+
+ 
+
+    </table>
+
+
+
+  </div>
+  <div id="CS" class="border rounded-md py-20 bg-blue-700 my-20 relative top-20 ">
+    <h2>
+      <center>COUNSELLING SERVICE</center>
+    </h2>
+    <table class="table-auto w-full border rounded-lg  bg-white-200">
+      <table>
+        <thead>
+          <tr>
+            <th>NAME</th>
+            <th>DESIGNATION</th>
+            <th> TENURE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Nishant patel </td>
+            <td>SG &AM</td>
+            <td>2022-23</td>
+          </tr>
+          <tr>
+            <td>Sparsh Prasad </td>
+            <td>CS-SAM ESC201<br> CS-AM CHM102</td>
+            <td>2022-23</td>
+          </tr>
+          
+          <tr>
+            <td>  Nandan Madhuj         
+            </td>
+            <td>CS AM MTH</td>
+            <td>2022-23</td>
+          </tr>
+          <tr>
+            <td>Priyanshu Tiwari  </td>
+            <td>CS-AM </td>
+            <td>2022-23</td>
+          </tr>
+          <tr>
+            <td> Nitin Kembasaram  </td>
+            <td>CS-SG
+               </td>
+            <td>2021-22</td>
+          </tr>
+          <tr>
+            <td> Srijan Shekhar              
+            </td>
+            <td>CS-AM</td>
+            <td>2022-23</td>
+          </tr>
+          <tr>
+            <td>Harshit Bansal</td>
+            <td>CS-AM</td>
+            <td>2021-22</td>
+          </tr>
+          <tr>
+            <td>Yashvardhan Rathore</td>
+            <td>CS- CORE TEAM MEMBER </td>
+            <td>2022-23</td>
+
+          </tr>
+          <tr>
+            <td>Mayankit</td>
+            <td>CS-AM</td>
+            <td>2022-23</td>
+          </tr>
+          <tr>
+            <td>Yash Barjatya </td>
+            <td>CS-SG</td>
+            <td>2021</td>
+          </tr>
+          <tr>
+            <td>Shobhit Lamba </td>
+            <td>CS-SAM</td>
+            <td>2022-23</td>
+          </tr>
+          <tr>
+            <td> </td>
+            <td></td>
+            <td></td>
+          </tr>
+
+
+            <td> Asjad Raza
+            
+            </td>
+            <td>CS-AM & SG</td>
+            <td>2022-23</td>
+          </tr>
+          <tr>
+            <td>Shivam Gupta 
+            </td>
+            <td>CS-AM</td>
+            <td>2022-23</td>
+          </tr>
+          <tr>
+            <td> Hitesh Anand
+            </td>
+            <td>CS-AM</td>
+            <td>2021-22</td>
+          </tr>
+          <tr>
+            <td>Syed Qayem Mehdi
+            </td>
+            <td>CS-CORE TEAM</td>
+            <td>2022-23</td>
+          </tr>
+          <tr>
+            <td>Akshat Mehta </td>
+            <td>CS-AM</td>
+            <td>2022-23</td>
+          </tr>
+
+
+          
+          
+          
+
+
+
+          
+        </tbody>
+
+      </table>
+
+  </div>
+  <!-- <div class="flex flex-row  w-full" id="fin">
+    <span class="text-white"> VEER SHIVAJI, SHAMSHER MARATHA </span>
+    <a href="#tp" class="relative left-20  top-20 border border-none background-none"><img src="scroll.png" width="40px"
+        height="40px">
+
+
+    </a>
+  </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
