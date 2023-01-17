@@ -28,7 +28,7 @@
     #udg,
     #hec,
     #club,
-    #CS,#tech {
+    #CS,#tech,#spo {
       width: 70vw;
       height: 400px;
       margin-bottom: 20px;
@@ -56,13 +56,19 @@
       margin-bottom:100px;
       /* z-index:2; */
       position:relative;
-      top:200px;
+      top:240px;
       height:700px;
+
+    }
+    #spo{
+      background-color:aqua;
+      position:relative;
+      top:200px;
 
     }
     #tech{
       position:relative;
-      top: 180px;
+      top: 200px;
     }
 
     #club {
@@ -81,7 +87,7 @@
       width: 300px;
 
       border-radius: 10px;
-      bottom: 120px;
+      bottom: 10px;
 
     }
 
@@ -92,7 +98,7 @@
       width: 300px;
       border:2px solid black;
 
-      top: 200px;
+      top: 1px;
 
 
 
@@ -106,7 +112,7 @@
       border-radius: 10px;
       right: 100px;
 
-      bottom: 125px;
+      bottom: 10px;
 
 
 
@@ -140,7 +146,7 @@
       border: 2px solid black;
       border-radius: 10px;
       height: 100px;
-      background-color: gray;
+      background:linear-gradient(45deg,red,yellow);
       padding-top: 10px;
 
     }
@@ -267,12 +273,13 @@
 
       </a>
     </div>
-    <div id="img">  <!--  <img src="jqdj.jpg" width="200px" height="200px"> -->
+    <div id="img" class=" flex flex-col justify-between  border-black items-center">  <!--  <img src="jqdj.jpg" width="200px" height="200px"> -->
             <a href="#tech" CLASS="h-20 px-10 relative left-28 bottom-40  mx-20 w-full text-4xl text-center bg-orange-500 my-20 "> TECHKRITI</a>
+            <a href="#spo" class="h-20 px-20 relative top-10 text-4xl mx-20 text-center w-20"> SPO </a>
   </div>
 
     <div id="box3" class=" px-10 relative left-20 mx-20 my-40 flex flex-col text-4xl items-center">
-      <a href="#CS" class=" h-20 px-10 relative left-20 mx-20 w-full text-center"> CS
+      <a href="#CS" class=" h-28 px-10 relative left-20 mx-20 w-full text-center"> COUNSELLING SERVICE
 
       </a>
       <a href="#club" class=" h-28 px-10 relative left-20 mx-20 w-full text-4xl text-center"> CLUBS,SOCIETIES & TEAMS
@@ -508,7 +515,8 @@
 
       </tbody>
     </table>
- <div id="tech" class="border rounded-md bg-yellow-400 my-20">
+   
+ <div id="tech" class="border rounded-md bg-yellow-400 my-20 relative top-20">
   <h2><center>TECHKRITI </center></h2>
   <table class="table-auto  border rounded-lg py-20 bg-white my-40 relative top-20">
     <thead>
@@ -551,7 +559,7 @@
 
     </tbody>
 
- </div>
+
 
  
 
@@ -560,7 +568,8 @@
 
 
   </div>
-  <div id="CS" class="border rounded-md py-20 bg-blue-700 my-20 relative top-20 ">
+
+  <div id="CS" class="border rounded-md py-20 bg-blue-700 my-20 relative top-10 ">
     <h2>
       <center>COUNSELLING SERVICE</center>
     </h2>
@@ -671,18 +680,57 @@
             <td>2022-23</td>
           </tr>
 
-
-          
-          
-          
-
-
-
-          
         </tbody>
 
       </table>
 
+  </div>
+  <div id="spo" class="border rounded-md bg-yellow-400 my-20 ">
+    <h2><center>SPO</center>  </h2>
+     <table class="table-auto  border rounded-lg py-20 bg-white my-40 relative ">
+  <thead>
+    <tr>
+      <th>NAME</th>
+      <th>DESIGNATION</th>
+      <th> TENURE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gyanendra Kumar </td>
+      <td> SPO OVERALL PLACEMENT COORDINATOR<br> ASSISTANT PLACEMENT COORDINATOR<br> COMPANY COORDINATOR </td>
+      <td>2022-23 <br>2021-22<br>2020-21</td>
+    </tr>
+    <tr>
+      <td>Akshat Mehta  </td>
+      <td> SPO COMPANY COORDINATOR</td>
+      <td>2022-23</td>
+    </tr>
+    <tr>
+      <td>Arpit Tiwari</td>
+      <td>SPO COMPANY COORDINATOR</td>
+      <td>2022-23</td>
+  
+    </tr>
+    <tr>
+      <td> Satyam Gupta</td>
+      <td> SPO COMPANY COORDINATOR</td>
+      <td> 2022-23</td>
+    </tr>
+    <tr>
+      <td>Nitin Kembasaram </td>
+      <td>SPO COMPANY COORDINATOR</td>
+      <td>2022-23</td>
+    </tr>
+    <tr>
+      <td> Nishant patel </td>
+      <td>SPO COMPANY COORDINATOR</td>
+      <td> 2022-23</td>
+    </tr>
+  </tbody>
+     </table>
+  
+  
   </div>
   <!-- <div class="flex flex-row  w-full" id="fin">
     <span class="text-white"> VEER SHIVAJI, SHAMSHER MARATHA </span>
